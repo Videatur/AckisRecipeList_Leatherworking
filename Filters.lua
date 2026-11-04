@@ -113,8 +113,7 @@ function module:InitializeItemFilters(parent_panel)
 
 	addon.SetTooltipScripts(general_toggle, L["GROUP_TOGGLE_FORMAT"]:format(_G.GENERAL))
 
-	-- MoP Classic non ha TOY_BOX; usa un fallback sicuro
-	local TOY_TEXT = _G.TOY_BOX or L["Toy"] or "Toy"
+	local TOY_TEXT = _G.TOY_BOX
 
 	local general_types = {
 		leatherworking_bag		= { tt = L["FILTER_DESC_FORMAT"]:format(_G.INVTYPE_BAG),	text = _G.INVTYPE_BAG,		row = 1, col = 1 },

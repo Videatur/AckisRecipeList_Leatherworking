@@ -2,7 +2,7 @@
 -- Constants
 -------------------------------------------------------------------------------
 local MODULE_NAME = "Leatherworking"
-local MODULE_VERSION = 4
+local MODULE_VERSION = 5
 
 -------------------------------------------------------------------------------
 -- AddOn namespace.
@@ -37,11 +37,10 @@ end
 
 function module:OnEnable()
 	addon.CreateProfessionFromModule(self)
-
-	self:InitializeDiscoveries()
-	self:InitializeMobDrops()
-	self:InitializeQuests()
-	self:InitializeTrainers()
-	self:InitializeVendors()
-	self:InitializeRecipes()
+	if self.InitializeDiscoveries then self:InitializeDiscoveries() end
+	if self.InitializeMobDrops then self:InitializeMobDrops() end
+	if self.InitializeQuests then self:InitializeQuests() end
+	if self.InitializeTrainers then self:InitializeTrainers() end
+	if self.InitializeVendors then self:InitializeVendors() end
+	if self.InitializeRecipes then self:InitializeRecipes() end
 end
