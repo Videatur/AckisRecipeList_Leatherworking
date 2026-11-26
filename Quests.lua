@@ -46,6 +46,10 @@ function module:InitializeQuests()
 	AddQuest(2860, 	Z.FERALAS, 			74.4, 42.8, "Horde")
 	AddQuest(7493,	Z.ORGRIMMAR,		51.6, 75.6,	"Horde")
 	AddQuest(7497,	Z.STORMWIND_CITY,	61.4, 78.6,	"Alliance")
+	-- Wild Leather Vest: Jangdor Swiftstrider (Horde) and Pratt McGrubben (Alliance).
+	AddQuest(82656, Z.FERALAS, 74.4, 42.8, "Horde")
+	AddQuest(82657, Z.FERALAS, 30.6, 42.6, "Alliance")
+	AddQuest(92817, Z.DESOLACE, 0, 0, "Neutral")
 	AddQuest(96031, Z.DUN_MOROGH, 		46.6, 53.8, "Alliance")
 	AddQuest(96875, Z.ORGRIMMAR, 		63.0, 45.0, "Horde")
 	AddQuest(97906, Z.DUROTAR, 			52.0, 47.2, "Horde")
@@ -54,6 +58,9 @@ function module:InitializeQuests()
 	AddQuest(97946, Z.TELDRASSIL, 		57.4, 56.6, "Alliance")
 	AddQuest(97958, Z.TIRISFAL_GLADES, 	57.2, 55.4, "Horde")
 	AddQuest(97969, Z.ZEPHRAS_ISLE, 	41.6, 44.8, "Neutral")
+
+	-- Zet'gan, Elderwild. Exact quest waypoint unavailable.
+	AddQuest(90854, Z.MOUNT_HYJAL, 0, 0, "Horde")
 
 	self.InitializeQuests = nil
 end
